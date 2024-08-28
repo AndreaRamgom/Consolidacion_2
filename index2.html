@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <section id="form1">
+            <table border="3" width="100%">
+                <h1> Formulario de contacto</h1> <!--aplicar un boton que sea el 
+        que envie la informacion estos deben ser el submint esto debe ser 
+        defino dentro de la etiqueta form para que todos los elemntos estes en esta etiqueta -->
+                <form action=""><!-- todos lo elemntos dentro de un formulario  -->
+                    <div class="row"> <!--clase de fila en donde se definiran adentro de las columnas-->
+                        <div class="col-12 col-sm-6  col-lg-4 col-xl-3"><!--clase col para definir los elementos en la primera grilla
+                 aca col-12 empieza desde el tamaño mas pequeño tomando todo el ancho de la
+                  pantalla-->
+                            <label for type="txt-rut">RUT</label>
+                            <input type="text" id="txt-rut" name="rut">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3"><!-- break point configurado
+                 asi : desde la pantalla mas grande empieza columna/12 espacios
+                  que es toda la pantalla/columna/resolucion sm/ 2 columnas 
+                  de 6 espacios/columna /resolucion lg/ 3 columnas de 4 
+                  espacios siempre dividiendo en 12 -->
+                            <label for type="txt-primer-nombre">PRIMER NOMBRE</label>
+                            <input type="text" id="txt-primer-nombre" name="primer_nom">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <label for type="txt-segundo-nombre">SEGUNDO NOMBRE</label>
+                            <input type="text" id="txt-segundo-nombre" name="segundo_nom">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <label for type="txt-apellido-paterno">APELLIDO PATERNO</label>
+                            <input type="text" id="txt-apellido-paterno" name="apellido_paterno">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <label for type="txt-apellido-materno">APELLIDO MATERNO</label>
+                            <input type="text" id="txt-apellido-materno" name="apellido_materno">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <label for type="txt-fecha-nacimiento">FECHA NACIMIENTO</label>
+                            <input type="date" id="txt-fecha-nacimiento" name="fecha_nacimiento">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <label for="select-sexo">SEXO</label>
+                            <select name="sexo" id="select-sexo"><!-- select es una lista
+                     despegable cada una de las opciones de la lista 
+                      se definen con la etiqueta option -->
+                                <option value=" ">Seleccione</option>
+                                <option value="masculino"> Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 ">
+                            <label for type="txt-correo-electronico">CORREO ELECTRONICO</label>
+                            <input type="email" id="txt-correo-electronico" name="correo_electronico">
+                        </div>
+
+
+
+                    </div>
+                    <div id="botones">
+                        <button type="submit" class="btn btn-primary">Submit</button><!-- los botones subtmit miestras
+                        este en la etiqueta form formulario nos permite enviar la informacion del 
+                        formularioa la informacion que tengamos del action-->
+                        <button type="reset" class="btn btn-danger">Limpia</button><!--para limpiar el formulario-->
+                    </div>
+                </form>
+                <a href="index.html">Volver</a> <!-- hipervinculo 
+        mostrara volver y volvera a la pagina index.html-->
+            </table>
+    </div>
+    </section>
+
+
+
+
+
+</body>
+</html>
